@@ -20,7 +20,9 @@
 			<input id="one" placeholder="Filter your to-dos" type="text" ng-model="stuff">
 
 			<ol>
-			<li ng-repeat="food in test.favFood track by $index"> {{ food }}<i class="material-icons" ng-click="test.removeFood($index)" href="">clear</i></li>
+			<li ng-repeat="food in test.favFood | filter: stuff track by $index"> {{ food }}
+
+				<i class="material-icons" ng-click="test.removeFood($index)" href="">clear</i></li>
 			</ol>
 			<input id="two" placeholder="Add your to-dos" type="text" ng-model="addFood">
 

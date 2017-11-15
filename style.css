@@ -66,8 +66,9 @@ button{
 }
 
 #one, #two{
-	width: 300px;
-	padding: 12px 170px;
+	width: 365px;
+	height: 40px;
+	/*padding: 12px 17px;*/
     border-radius: 3px;
     margin: 17px  auto 0 ;
     display:block;

@@ -3,11 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>test module</title>
+        <title>TODO List</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-   		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+   		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
       <div id="container">
@@ -22,7 +21,8 @@
 			<ol>
 			<li ng-repeat="food in test.favFood | filter: stuff track by $index"> {{ food }}
 
-				<i class="material-icons" ng-click="test.removeFood($index)" href="">clear</i></li>
+				<i class="material-icons" ng-click="test.removeFood($index)" href="">clear</i>
+			</li>
 			</ol>
 			<input id="two" placeholder="Add your to-dos" type="text" ng-model="addFood">
 

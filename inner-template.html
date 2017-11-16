@@ -1,0 +1,46 @@
+
+<div> 
+
+			<input id="one" placeholder="Filter your to-dos" type="text" ng-model="stuff">
+
+			<ol>
+			<li ng-repeat="Grocery in $ctrl.GroceryList | filter: stuff track by $index" list-directive> {{Grocery}}<i class="material-icons" ng-click="$ctrl.remove($index)" href="">clear</i>
+			</li>
+			</ol>
+			<input id="two" placeholder="Add your to-dos" type="text" ng-model="add">
+
+			<button ng-click="$ctrl.add(add)">Add</button>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div ng-controller="testController as test">
+
+			<input id="one" placeholder="Filter your to-dos" type="text" ng-model="stuff">
+
+			<ol>
+			<li ng-repeat="Grocery in test.GroceryList | filter: stuff track by $index" list-directive> {{Grocery}}<i class="material-icons" ng-click="test.remove($index)" href="">clear</i>
+			</li>
+			</ol>
+			<input id="two" placeholder="Add your to-dos" type="text" ng-model="add">
+
+			<button ng-click="test.add(add)">Add</button>
+
+		</div> -->

@@ -1,5 +1,5 @@
 </doctype html>
-<html ng-app="testModule" lang="en">
+<html ng-app="myApp" lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,34 +9,20 @@
    		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-      <div id="container">
-      <p>TODO List</p>
 
-      <h1> A place to store the things you have to do!</h1>
-
-		<div ng-controller="testController as test">
-
-			<input id="one" placeholder="Filter your to-dos" type="text" ng-model="stuff">
-
-			<ol>
-			<li ng-repeat="food in test.favFood | filter: stuff track by $index"> {{ food }}
-
-				<i class="material-icons" ng-click="test.removeFood($index)" href="">clear</i>
-			</li>
-			</ol>
-			<input id="two" placeholder="Add your to-dos" type="text" ng-model="addFood">
-
-			<button ng-click="test.addFood(addFood)">Add</button>
-
-		</div>
+      <task-form></task-form>
+      
+		
    
-    </div>
+    
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script> 
 	
 	<script src="module.js"></script>
-	
+	<script src="component.js"></script>
+    <script src="directive.js"></script>
 	<script src="controller.js"></script>
+	<script src="inner-component.js"></script>
  
 
     </body>
